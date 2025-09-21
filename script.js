@@ -18,7 +18,8 @@ function getConsoleInput(){
 	      	break;
 	}
 	console.log("My choice: " + consoleChoice);
-	return consoleChoice;}
+	return consoleChoice;
+}
 
 function getPlayerInput(){
 	const playerChoice = prompt("Rock, Paper, Scissors... SHOOT!");
@@ -72,21 +73,17 @@ function playRound(consoleChoice, playerChoice){
 	} else {
 	
 	console.log("No Fair!!");
-}
+	}
 
 	const roundMessage = playerWon ? "You won this round!" : "Better luck next time";
 	console.log(roundMessage);
 	if(playerWon){
 	return "Player";
-} else {
+	} else {
 	return "Console";
-}
-
+	}
 }
 	
-
-
-
 function playGame(){
 	let playerScore = 0;
 	let consoleScore = 0;
@@ -111,10 +108,9 @@ function playGame(){
 		alert(`I win! Good game, Check the console to see how you did. Final score: ${playerScore} ${consoleScore}`);
 	}
 
-
-
 }
 
 playGame();
+
 
  }); 
